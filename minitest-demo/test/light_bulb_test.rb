@@ -30,7 +30,7 @@ class LightBulbTest < Minitest::Test
     refute_predicate @light_bulb, :off?
   end
 
-  def test_on_checks_light_bulb_state
+  def test_off_checks_light_bulb_state
     @light_bulb.off
     assert_predicate @light_bulb, :off?
     refute_predicate @light_bulb, :on?

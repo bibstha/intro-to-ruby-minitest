@@ -26,7 +26,7 @@ class LampTest < Minitest::Test
     assert_predicate @lamp.light_bulb, :off?
   end
 
-  def test_turn_on_turns_on_light_bulb
+  def test_turn_off_turns_off_light_bulb
     @lamp.plug_in
     @lamp.turn_on
     @lamp.turn_off
