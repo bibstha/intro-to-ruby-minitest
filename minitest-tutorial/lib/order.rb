@@ -6,7 +6,7 @@ class Order
   attr_reader :items
 
   def total
-    items.map(&:price).sum
+    items.map(&:price).inject(:+)
   end
 
   def valid?
